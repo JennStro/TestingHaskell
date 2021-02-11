@@ -9,7 +9,7 @@ reset='\x1B[0m'
 # To execute run "./testScript.sh"
 echo "${lightBlue}_____________________________________________________${reset}"
 echo ""
-echo "${lightBlue}   Hello! Starting typecheckerGeneralExtBTL.hs ${reset}"
+echo "${lightBlue}   Hello! Starting testing. ${reset}"
 echo "${lightBlue}_____________________________________________________${reset}"
 echo ""
 
