@@ -7,7 +7,7 @@ set green "\x1B\[0;32m"
 
 puts ${blue}
 
-spawn ghci typecheckerGeneralExtBTL.hs
+spawn ghci example.hs
 
 
 
