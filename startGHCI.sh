@@ -13,11 +13,11 @@ spawn ghci example.hs
 
 expect "*Main> "
 
-puts ${reset}
-
 send "test \r"
 
 expect "*Main> "
 
 send ":q \r"
 expect "Leaving GHCi. "
+
+puts ${reset}
