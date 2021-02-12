@@ -13,7 +13,7 @@ echo "${lightBlue}   Hello! Starting testing. ${reset}"
 echo "${lightBlue}_____________________________________________________${reset}"
 echo ""
 
-#ghci typecheckerGeneralExtBTL.hs
+#ghci
 expect startGHCI.sh
 
 echo "${lightPurple}--------------- TESTS ---------------\n"
@@ -22,7 +22,7 @@ result="out.txt"
 
 while IFS= read -r line
 do
-  [[ "$line" == *"T"* ]] && echo "${lightGreen}* PASSED${reset}" || echo "${lightRed}* FAILED${reset}"
+  [[ "$line" == *"True"* ]] && echo "${lightGreen}* PASSED${reset}" || echo "${lightRed}* FAILED${reset}"
 done < "${result}"
 
 
