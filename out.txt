@@ -1,2 +1,2 @@
-True [testmessage] (Expected: 1 Actual: 1) 
-False [this should fail!] (Expected: 1 Actual: 1) 
+True [1 == 1] (Expected: 1 Actual: 1) 
+False [1 /= 1] (Expected: 1 Actual: 1) 

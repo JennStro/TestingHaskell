@@ -24,9 +24,10 @@ result="out.txt"
 
 while IFS= read -r line
 do
-  echo "$line" | cut -d ' ' -f 2-
   resultOfTest=$(IFS=" " ; set -- $line ; echo $1)
-  [[ "$resultOfTest" == *"True"* ]] && echo "${lightGreen}PASSED${reset}" || echo "${lightRed}FAILED${reset}"
+  [[ "$resultOfTest" == *"True"* ]] && echo "${lightGreen}* PASSED *${reset}" || echo "${lightRed}* FAILED *${reset}"
+  echo "$line" | cut -d ' ' -f 2-
+  echo ""
 done < "${result}"
 
 
