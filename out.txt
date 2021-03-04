@@ -1,2 +1,1 @@
-True 1 == 1 should pass
-False 1 == 2 should fail
+True testmessage

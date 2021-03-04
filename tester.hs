@@ -1,13 +1,9 @@
 
 module Tester where 
 
-type Expected = String 
-type Actual = String 
-type Result = Bool 
+type Message = String 
 
-assertEquals :: Expected -> Actual -> Result
-assertEquals expected actual = expected == actual
+assertEquals :: (Eq a, Eq a) => a -> a -> Message -> IO()
+assertEquals exp act message = writeFile "out.txt"  $ show (exp == act) ++ " " ++ message ++ "\n"
 
-assertTrue :: Bool -> Result 
-assertTrue bool = bool 
 
