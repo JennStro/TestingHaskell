@@ -18,18 +18,18 @@ rm "out.txt"
 #ghci
 expect startGHCI.sh
 
-echo "${lightPurple}--------------- TESTS ---------------\n${reset}"
+printf "${lightPurple}--------------- TESTS ---------------\n\n${reset}"
 
 result="out.txt"
 
 while IFS= read -r line
 do
   resultOfTest=$(IFS=" " ; set -- $line ; echo $1)
-  [[ "$resultOfTest" == *"True"* ]] && echo "${lightGreen}* PASSED *${reset}" || echo "${lightRed}* FAILED *${reset}"
+  [[ "$resultOfTest" == *"True"* ]] && printf "${lightGreen}PASSED${reset}: " || printf "${lightRed}FAILED${reset}: "
   echo "$line" | cut -d ' ' -f 2-
   echo ""
 done < "${result}"
 
 
-echo "\n${lightPurple}-------------------------------------\n"
+printf "${lightPurple}-------------------------------------\n"
 
