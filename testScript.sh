@@ -13,6 +13,8 @@ echo "${lightBlue}   Hello! Starting testing. ${reset}"
 echo "${lightBlue}_____________________________________________________${reset}"
 echo ""
 
+rm "out.txt"
+
 #ghci
 expect startGHCI.sh
 
