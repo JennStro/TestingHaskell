@@ -6,3 +6,5 @@ test = do
         shouldNotBeEqual 1 1 "1 /= 1"
         shouldAlwaysBeTrue (1 == 2) "my test"
         shouldAlwaysBeTrue (3 == 3) "my succeeding test"
+        shouldBeEqual "hei" "hei" "Testing string"
+        shouldAlwaysBeTrue ("hello" == "hello") "Testing string 2"
