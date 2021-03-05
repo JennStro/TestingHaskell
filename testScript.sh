@@ -18,7 +18,7 @@ rm "out.txt"
 #ghci
 expect startGHCI.sh
 
-printf "${lightPurple}--------------- TESTS ---------------\n\n${reset}"
+printf "${lightPurple}----------------------------------- TESTS -----------------------------------\n\n${reset}"
 
 result="out.txt"
 
@@ -31,5 +31,5 @@ do
 done < "${result}"
 
 
-printf "${lightPurple}-------------------------------------\n"
+printf "${lightPurple}-------------------------------------------------------------------------------\n"
 
