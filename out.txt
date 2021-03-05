@@ -1,2 +1,4 @@
 True [ 1 == 1 ] (Expected: 1 Actual: 1 in shouldBeEqual) 
 False [ 1 /= 1 ] (Expected: 1 Actual: 1 in shouldNotBeEqual) 
+False [ my test ] (Expected: True Actual: False in shouldAlwaysBeTrue) 
+True [ my succeeding test ] (Expected: True Actual: True in shouldAlwaysBeTrue) 
